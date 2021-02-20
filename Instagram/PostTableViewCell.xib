@@ -40,7 +40,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkV-Wb-c3y">
-                        <rect key="frame" x="130" y="414.5" width="254" height="21"/>
+                        <rect key="frame" x="210" y="414.5" width="174" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -51,22 +51,31 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKq-Bw-tQW">
+                        <rect key="frame" x="130" y="410" width="70" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="k5J-Ws-AjT"/>
+                        </constraints>
+                        <state key="normal" title="コメント"/>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="kkV-Wb-c3y" firstAttribute="centerY" secondItem="t7y-gA-NVb" secondAttribute="centerY" id="0Ot-aQ-qJ2"/>
+                    <constraint firstItem="kkV-Wb-c3y" firstAttribute="leading" secondItem="sKq-Bw-tQW" secondAttribute="trailing" constant="10" id="1rK-We-6xF"/>
                     <constraint firstItem="t7y-gA-NVb" firstAttribute="top" secondItem="dPd-K7-6gB" secondAttribute="bottom" constant="10" id="4jx-qY-edA"/>
-                    <constraint firstItem="kkV-Wb-c3y" firstAttribute="leading" secondItem="7P6-Hn-Jjh" secondAttribute="trailing" constant="10" id="8RZ-cL-FMF"/>
                     <constraint firstItem="2jn-Up-rTq" firstAttribute="top" secondItem="t7y-gA-NVb" secondAttribute="bottom" constant="10" id="D91-c6-Pjx"/>
                     <constraint firstItem="2jn-Up-rTq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Ibe-8A-tCg"/>
-                    <constraint firstItem="7P6-Hn-Jjh" firstAttribute="centerY" secondItem="t7y-gA-NVb" secondAttribute="centerY" id="N68-JS-caI"/>
                     <constraint firstItem="dPd-K7-6gB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="OXf-ic-orN"/>
                     <constraint firstAttribute="trailingMargin" secondItem="2jn-Up-rTq" secondAttribute="trailing" constant="10" id="UiH-i7-UoX"/>
                     <constraint firstAttribute="trailingMargin" secondItem="kkV-Wb-c3y" secondAttribute="trailing" constant="10" id="Vb4-BD-W4X"/>
-                    <constraint firstItem="kkV-Wb-c3y" firstAttribute="centerY" secondItem="t7y-gA-NVb" secondAttribute="centerY" id="Xli-3t-jgY"/>
                     <constraint firstAttribute="bottomMargin" secondItem="2jn-Up-rTq" secondAttribute="bottom" constant="10" id="bGY-n7-oFx"/>
+                    <constraint firstItem="sKq-Bw-tQW" firstAttribute="leading" secondItem="7P6-Hn-Jjh" secondAttribute="trailing" constant="10" id="kLr-PE-UoZ"/>
                     <constraint firstItem="t7y-gA-NVb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="lOw-Hh-6ui"/>
                     <constraint firstAttribute="trailingMargin" secondItem="dPd-K7-6gB" secondAttribute="trailing" id="olw-RK-5Tg"/>
+                    <constraint firstItem="7P6-Hn-Jjh" firstAttribute="centerY" secondItem="t7y-gA-NVb" secondAttribute="centerY" id="pTL-bI-VJp"/>
                     <constraint firstItem="7P6-Hn-Jjh" firstAttribute="leading" secondItem="t7y-gA-NVb" secondAttribute="trailing" constant="10" id="pVU-Gx-gyn"/>
                     <constraint firstItem="dPd-K7-6gB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qTv-b5-AaC"/>
+                    <constraint firstItem="sKq-Bw-tQW" firstAttribute="centerY" secondItem="t7y-gA-NVb" secondAttribute="centerY" id="xUK-5w-14s"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
