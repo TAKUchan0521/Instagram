@@ -71,15 +71,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
 
-    
-
     // セル内のコメントボタンがタップされた時に呼ばれるメソッド
     @objc func handleCommentButton(_ sender: UIButton, forEvent event: UIEvent) {
         print("DEBUG_PRINT: commentボタンがタップされました。")
         
-        let CommentViewController = storyboard!.instantiateViewController(withIdentifier: "Comment")
-        present(CommentViewController, animated: true)
+        // タップされたセルのインデックスを求める
+        let touch = event.allTouches?.first
+        let point = touch!.location(in: self.tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
 
+        // 配列からタップされたインデックスのデータを取り出す
+        let postData = postArray[indexPath!.row]
+        let documentId = postData.id
+        
+        let CommentViewController = storyboard!.instantiateViewController(withIdentifier: "Comment") as! CommentViewController
+        CommentViewController.receiveData = documentId
+        self.present(CommentViewController, animated: true, completion: nil)
     }
     
     // セル内のボタンがタップされた時に呼ばれるメソッド

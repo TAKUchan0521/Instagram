@@ -255,7 +255,7 @@
                                 </constraints>
                                 <state key="normal" title="投稿" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="commentButton:" destination="QWd-Rf-jaT" eventType="touchUpInside" id="doT-If-LoW"/>
+                                    <action selector="commentPostButton:" destination="QWd-Rf-jaT" eventType="touchUpInside" id="tre-UN-uB6"/>
                                 </connections>
                             </button>
                         </subviews>

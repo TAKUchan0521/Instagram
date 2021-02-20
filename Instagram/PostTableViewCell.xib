@@ -46,7 +46,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jn-Up-rTq">
-                        <rect key="frame" x="30" y="455" width="354" height="56.5"/>
+                        <rect key="frame" x="30" y="455" width="354" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -59,8 +59,8 @@
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <state key="normal" title="コメント" backgroundImage="btn"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QT0-Ya-hLw">
-                        <rect key="frame" x="30" y="521.5" width="354" height="56.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QT0-Ya-hLw">
+                        <rect key="frame" x="30" y="485.5" width="354" height="92.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -70,6 +70,7 @@
                     <constraint firstItem="kkV-Wb-c3y" firstAttribute="centerY" secondItem="t7y-gA-NVb" secondAttribute="centerY" id="0Ot-aQ-qJ2"/>
                     <constraint firstItem="kkV-Wb-c3y" firstAttribute="leading" secondItem="sKq-Bw-tQW" secondAttribute="trailing" constant="10" id="1rK-We-6xF"/>
                     <constraint firstItem="t7y-gA-NVb" firstAttribute="top" secondItem="dPd-K7-6gB" secondAttribute="bottom" constant="10" id="4jx-qY-edA"/>
+                    <constraint firstItem="QT0-Ya-hLw" firstAttribute="top" secondItem="2jn-Up-rTq" secondAttribute="bottom" constant="10" id="6E9-RZ-hdC"/>
                     <constraint firstItem="2jn-Up-rTq" firstAttribute="top" secondItem="t7y-gA-NVb" secondAttribute="bottom" constant="10" id="D91-c6-Pjx"/>
                     <constraint firstItem="QT0-Ya-hLw" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="DIm-qD-Mst"/>
                     <constraint firstItem="2jn-Up-rTq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Ibe-8A-tCg"/>
@@ -79,8 +80,6 @@
                     <constraint firstItem="2jn-Up-rTq" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="a8S-ud-6zC"/>
                     <constraint firstItem="QT0-Ya-hLw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="b34-Uj-ODg"/>
                     <constraint firstAttribute="trailingMargin" secondItem="QT0-Ya-hLw" secondAttribute="trailing" constant="10" id="buq-Kq-cPL"/>
-                    <constraint firstItem="QT0-Ya-hLw" firstAttribute="height" secondItem="2jn-Up-rTq" secondAttribute="height" id="d7t-Ie-X0D"/>
-                    <constraint firstItem="QT0-Ya-hLw" firstAttribute="top" secondItem="2jn-Up-rTq" secondAttribute="bottom" constant="10" id="gWO-Pi-AwH"/>
                     <constraint firstItem="sKq-Bw-tQW" firstAttribute="leading" secondItem="7P6-Hn-Jjh" secondAttribute="trailing" constant="10" id="kLr-PE-UoZ"/>
                     <constraint firstItem="t7y-gA-NVb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="lOw-Hh-6ui"/>
                     <constraint firstAttribute="trailingMargin" secondItem="dPd-K7-6gB" secondAttribute="trailing" id="olw-RK-5Tg"/>

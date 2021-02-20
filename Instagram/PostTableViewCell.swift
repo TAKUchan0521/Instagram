@@ -31,6 +31,11 @@ class PostTableViewCell: UITableViewCell {
 
         // キャプションの表示
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
+        
+        // コメントの表示
+        let array = postData.comment
+        let str = array.joined(separator: "\n")
+        self.commentLabel.text = str
 
         // 日時の表示
         self.dateLabel.text = ""
