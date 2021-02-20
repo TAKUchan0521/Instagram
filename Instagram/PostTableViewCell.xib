@@ -51,15 +51,13 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKq-Bw-tQW">
-                        <rect key="frame" x="130" y="410" width="70" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKq-Bw-tQW">
+                        <rect key="frame" x="130" y="405" width="70" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="70" id="k5J-Ws-AjT"/>
                         </constraints>
-                        <state key="normal" title="コメント"/>
-                        <connections>
-                            <action selector="commentButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="d83-Dg-1fu"/>
-                        </connections>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="コメント" backgroundImage="btn"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QT0-Ya-hLw">
                         <rect key="frame" x="30" y="521.5" width="354" height="56.5"/>
@@ -96,7 +94,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="captionLabel" destination="2jn-Up-rTq" id="Ejw-mV-96d"/>
-                <outlet property="commentButton" destination="sKq-Bw-tQW" id="tgl-2O-N9D"/>
+                <outlet property="commentButton" destination="sKq-Bw-tQW" id="9V0-EY-qV2"/>
                 <outlet property="commentLabel" destination="QT0-Ya-hLw" id="jqC-Gt-XWs"/>
                 <outlet property="dateLabel" destination="kkV-Wb-c3y" id="DXV-y6-dWg"/>
                 <outlet property="likeButton" destination="t7y-gA-NVb" id="sS0-oh-5AB"/>
@@ -107,6 +105,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="btn" width="300" height="40"/>
         <image name="like_none" width="40" height="40"/>
     </resources>
 </document>

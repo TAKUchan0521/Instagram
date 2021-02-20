@@ -30,18 +30,18 @@ class PostViewController: UIViewController {
                 UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
                 return
             }
-            // FireStoreに投稿データを保存する
-            let name = Auth.auth().currentUser?.displayName
-            let postDic = [
-                "name": name!,
-                "caption": self.textField.text!,
-                "date": FieldValue.serverTimestamp(),
-                ] as [String : Any]
-            postRef.setData(postDic)
-            // HUDで投稿完了を表示する
-            SVProgressHUD.showSuccess(withStatus: "投稿しました")
-            // 投稿処理が完了したので先頭画面に戻る
-            UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
+        // FireStoreに投稿データを保存する
+        let name = Auth.auth().currentUser?.displayName
+        let postDic = [
+            "name": name!,
+            "caption": self.textField.text!,
+            "date": FieldValue.serverTimestamp(),
+            ] as [String : Any]
+        postRef.setData(postDic)
+        // HUDで投稿完了を表示する
+        SVProgressHUD.showSuccess(withStatus: "投稿しました")
+        // 投稿処理が完了したので先頭画面に戻る
+        UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
         }
     }
 

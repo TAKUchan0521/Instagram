@@ -23,6 +23,7 @@
 		773FA88925E0ED8F004B2C32 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773FA88825E0ED8F004B2C32 /* PostData.swift */; };
 		773FA88D25E0EDD7004B2C32 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773FA88B25E0EDD7004B2C32 /* PostTableViewCell.swift */; };
 		773FA88E25E0EDD7004B2C32 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773FA88C25E0EDD7004B2C32 /* PostTableViewCell.xib */; };
+		773FA89125E0F3F3004B2C32 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773FA89025E0F3F3004B2C32 /* CommentViewController.swift */; };
 		AE0AF3A39EAF547FEB60134D /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF93DC6B7963DF12C4D7047 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		773FA88825E0ED8F004B2C32 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		773FA88B25E0EDD7004B2C32 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		773FA88C25E0EDD7004B2C32 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		773FA89025E0F3F3004B2C32 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		ECF93DC6B7963DF12C4D7047 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 				773FA7B825E0C212004B2C32 /* LoginViewController.swift */,
 				773FA81E25E0E26B004B2C32 /* Const.swift */,
 				773FA7BF25E0C245004B2C32 /* ImageSelectViewController.swift */,
+				773FA89025E0F3F3004B2C32 /* CommentViewController.swift */,
 				773FA7C525E0C26A004B2C32 /* SettingViewController.swift */,
 				773FA7C225E0C257004B2C32 /* PostViewController.swift */,
 				773FA7CD25E0C7F1004B2C32 /* TabBarController.swift */,
@@ -245,6 +248,7 @@
 				773FA7C625E0C26A004B2C32 /* SettingViewController.swift in Sources */,
 				773FA88925E0ED8F004B2C32 /* PostData.swift in Sources */,
 				773FA7B925E0C212004B2C32 /* LoginViewController.swift in Sources */,
+				773FA89125E0F3F3004B2C32 /* CommentViewController.swift in Sources */,
 				773FA7A425E0C0CE004B2C32 /* AppDelegate.swift in Sources */,
 				773FA7A625E0C0CE004B2C32 /* SceneDelegate.swift in Sources */,
 				773FA81F25E0E26B004B2C32 /* Const.swift in Sources */,

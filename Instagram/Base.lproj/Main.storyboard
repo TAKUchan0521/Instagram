@@ -230,6 +230,54 @@
             </objects>
             <point key="canvasLocation" x="958" y="901"/>
         </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="mqm-8g-keD">
+            <objects>
+                <viewController storyboardIdentifier="Comment" id="QWd-Rf-jaT" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9dm-t7-myV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yz3-57-ZIn">
+                                <rect key="frame" x="10" y="54" width="394" height="295.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yz3-57-ZIn" secondAttribute="height" multiplier="4:3" id="HJc-lf-rdF"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGQ-tF-nYW">
+                                <rect key="frame" x="57" y="359.5" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="hIs-i5-6lX"/>
+                                </constraints>
+                                <state key="normal" title="投稿" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="commentButton:" destination="QWd-Rf-jaT" eventType="touchUpInside" id="doT-If-LoW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qlQ-5l-nVQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qlQ-5l-nVQ" firstAttribute="trailing" secondItem="Yz3-57-ZIn" secondAttribute="trailing" constant="10" id="0U1-MR-4en"/>
+                            <constraint firstItem="Yz3-57-ZIn" firstAttribute="top" secondItem="qlQ-5l-nVQ" secondAttribute="top" constant="10" id="6D5-r2-LHY"/>
+                            <constraint firstItem="ZGQ-tF-nYW" firstAttribute="centerX" secondItem="9dm-t7-myV" secondAttribute="centerX" id="6qi-Je-FZ6"/>
+                            <constraint firstItem="ZGQ-tF-nYW" firstAttribute="top" secondItem="Yz3-57-ZIn" secondAttribute="bottom" constant="10" id="ZB3-H7-8Ze"/>
+                            <constraint firstItem="Yz3-57-ZIn" firstAttribute="leading" secondItem="qlQ-5l-nVQ" secondAttribute="leading" constant="10" id="aOI-NA-zPZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentLabel" destination="Yz3-57-ZIn" id="q9q-iJ-aw3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3A-7y-sWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-662" y="1592"/>
+        </scene>
         <!--Post View Controller-->
         <scene sceneID="itQ-Jh-8hk">
             <objects>
@@ -320,6 +368,9 @@
         <image name="camera" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
         <image name="setting" width="25" height="25"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
