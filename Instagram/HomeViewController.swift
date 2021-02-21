@@ -85,7 +85,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let documentId = postData.id
         
         let CommentViewController = storyboard!.instantiateViewController(withIdentifier: "Comment") as! CommentViewController
-        CommentViewController.receiveData = documentId
+        CommentViewController.receiveId = documentId
         self.present(CommentViewController, animated: true, completion: nil)
     }
     

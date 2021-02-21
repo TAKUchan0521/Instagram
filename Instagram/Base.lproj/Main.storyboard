@@ -258,6 +258,16 @@
                                     <action selector="commentPostButton:" destination="QWd-Rf-jaT" eventType="touchUpInside" id="tre-UN-uB6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NeZ-QO-RSg">
+                                <rect key="frame" x="57" y="409.5" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ZrI-jT-del"/>
+                                </constraints>
+                                <state key="normal" title="キャンセル" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="cancelButton:" destination="QWd-Rf-jaT" eventType="touchUpInside" id="Lqc-VB-cQX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qlQ-5l-nVQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -265,8 +275,12 @@
                             <constraint firstItem="qlQ-5l-nVQ" firstAttribute="trailing" secondItem="Yz3-57-ZIn" secondAttribute="trailing" constant="10" id="0U1-MR-4en"/>
                             <constraint firstItem="Yz3-57-ZIn" firstAttribute="top" secondItem="qlQ-5l-nVQ" secondAttribute="top" constant="10" id="6D5-r2-LHY"/>
                             <constraint firstItem="ZGQ-tF-nYW" firstAttribute="centerX" secondItem="9dm-t7-myV" secondAttribute="centerX" id="6qi-Je-FZ6"/>
+                            <constraint firstItem="NeZ-QO-RSg" firstAttribute="centerX" secondItem="9dm-t7-myV" secondAttribute="centerX" id="FDt-eG-vo3"/>
                             <constraint firstItem="ZGQ-tF-nYW" firstAttribute="top" secondItem="Yz3-57-ZIn" secondAttribute="bottom" constant="10" id="ZB3-H7-8Ze"/>
+                            <constraint firstItem="ZGQ-tF-nYW" firstAttribute="centerX" secondItem="9dm-t7-myV" secondAttribute="centerX" id="Zup-rj-uaq"/>
                             <constraint firstItem="Yz3-57-ZIn" firstAttribute="leading" secondItem="qlQ-5l-nVQ" secondAttribute="leading" constant="10" id="aOI-NA-zPZ"/>
+                            <constraint firstItem="Yz3-57-ZIn" firstAttribute="centerX" secondItem="9dm-t7-myV" secondAttribute="centerX" id="cIO-2J-oGW"/>
+                            <constraint firstItem="NeZ-QO-RSg" firstAttribute="top" secondItem="ZGQ-tF-nYW" secondAttribute="bottom" constant="10" id="xfY-5w-KVw"/>
                         </constraints>
                     </view>
                     <connections>

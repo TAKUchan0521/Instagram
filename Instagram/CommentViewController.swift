@@ -6,7 +6,7 @@ class CommentViewController: UIViewController {
 
     @IBOutlet weak var commentLabel: UITextView!
     
-    var receiveData: String!
+    var receiveId: String!
     
     @IBAction func commentPostButton(_ sender: Any) {
 
@@ -14,10 +14,11 @@ class CommentViewController: UIViewController {
         SVProgressHUD.show()
         
         // FireStoreに投稿データを保存する
-        if let commentText = commentLabel.text {
+        if let commentText = commentLabel.text, let name = Auth.auth().currentUser?.displayName {
             var updateValue: FieldValue
-            updateValue = FieldValue.arrayUnion([commentText])
-            let postRef = Firestore.firestore().collection(Const.PostPath).document(receiveData)
+            // updateValue = "\(postData.name!) : \(FieldValue.arrayUnion([commentText]))"
+            updateValue = FieldValue.arrayUnion(["\(name) : \(commentText)"])
+            let postRef = Firestore.firestore().collection(Const.PostPath).document(receiveId)
             postRef.updateData(["comment": updateValue])
         }
 
@@ -29,6 +30,10 @@ class CommentViewController: UIViewController {
         SVProgressHUD.dismiss()
     }
     
+    @IBAction func cancelButton(_ sender: Any) {
+        // 画面を閉じる
+        self.dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
